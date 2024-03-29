@@ -1,38 +1,63 @@
+body{
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-attachment: fixed;
+  text-align: center;
+
+}
 .App {
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pill{
+  width: 20%;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: black;
+  border: solid 5px lightblue;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+  background-color: white;
+}
+h1{
+  font-size: 5em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.intro{
   display: flex;
   flex-direction: column;
-  align-items: center;
+justify-content: center;
+align-items: center;
+}
+.PillMessage{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 10rem auto;
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  width: 40%;
+  height: auto;
+  border-radius: 1rem;
+padding: 0.5rem;
 }
+.text{
+  font-size: 1.5em;
 
-.App-link {
-  color: #61dafb;
 }
+.PillMessage{
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .PillMessage {
+    width: 70%;
+    padding: 1rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
