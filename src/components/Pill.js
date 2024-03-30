@@ -7,7 +7,7 @@ const Pill = ({onClick}) => {
   return (
     <div className={'intro'}>
       <h1>Happy pill</h1>
-        <img src={pil} className={'pill'} alt={"happy pill cartoon image"} />
+        <img src={pil} className={'pill'} alt={"happy pill cartoon "} />
       <Link to="/PillMessage">
         <button className={'button-19'} onClick={onclick}>Take a pill</button>
         </Link>
